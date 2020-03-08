@@ -103,15 +103,14 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
   if !full?(board)
-      until over?(board)
-      turn(board)
+    until over?(board)
+    turn(board)
   end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  else draw?(board) == false
-    puts "Cat's game!"
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    else draw?(board) == false
+      puts "Cat's game!"
     end
   end
 end
