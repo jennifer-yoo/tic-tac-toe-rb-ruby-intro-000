@@ -102,15 +102,15 @@ def winner(board)
   end
 end
 
-def play
+def play(board)
   if !full?(board)
     until over?(board)
     turn(board)
   end
   if won?(board)
-    puts "Congratulations #{winner(board)}"
+    puts "Congratulations the winner #{winner(board)}"
   else draw?(board)
-    puts "It's a draw"
+    puts "Cat's game"
     end
   end
 end
