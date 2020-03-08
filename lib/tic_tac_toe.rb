@@ -105,7 +105,6 @@ end
 def play(board)
   until over?(board) == true
     turn(board)
-    input.to_i += 1
   end
 
     if won?(board)
