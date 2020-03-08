@@ -104,10 +104,8 @@ end
 
 def play(board)
   if !full?(board)
-    input = gets.strip
+    input = gets
     until over?(board) == false
-    turn(board)
-    until over?(board) == true
     turn(board)
   end
 end
