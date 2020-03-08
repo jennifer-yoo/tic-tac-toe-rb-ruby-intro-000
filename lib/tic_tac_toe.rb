@@ -103,8 +103,9 @@ def winner(board)
 end
 
 def play(board)
+  input = gets.strip
+
   if !full?(board)
-    input = gets.strip
     until over?(board)
     turn(board)
   end
