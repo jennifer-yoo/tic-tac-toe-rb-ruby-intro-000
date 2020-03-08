@@ -95,8 +95,11 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return "X" 
+  if won?(board) == "X"
+    return "X"
+  end
+  if won?(board) == "O"
+    return "O"
   else draw?(board) || !full?(board)
     return nil
   end
