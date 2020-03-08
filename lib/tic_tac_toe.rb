@@ -115,10 +115,9 @@ def play(board)
   end
     if won?(board)
       puts "Congratulations #{winner(board)}!"
-    end
-      else draw?(board) == true
+    else draw?(board) == true
         puts "Cat's Game!"
-      end
+    end
 end
 
 #  rspec spec/02_play_spec.rb
