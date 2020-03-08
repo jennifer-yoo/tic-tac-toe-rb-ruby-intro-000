@@ -105,7 +105,7 @@ end
 def play(board)
   input = gets
 
-  until over?(board)
+  until over?(board) == true
     turn(board)
   end
     if won?(board)
