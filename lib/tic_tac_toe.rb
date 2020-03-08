@@ -115,4 +115,3 @@ def play(board)
         print "Cat's Game!"
       end
   end
-end
