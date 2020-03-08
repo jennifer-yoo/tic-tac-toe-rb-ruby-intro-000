@@ -96,7 +96,7 @@ end
 
 def winner(board)
   if won?(board)
-    return "X" || return "O"
+    return "X" 
   else draw?(board) || !full?(board)
     return nil
   end
