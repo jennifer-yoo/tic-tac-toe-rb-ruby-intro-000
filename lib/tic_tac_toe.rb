@@ -104,11 +104,14 @@ end
 
 def play(board)
   input = gets
+
   if !full?(board)
-    turn_count(board) = 0
-    until over?(board)
-    turn(board)
-    turn_count(board) += 1
+    loop do
+      turn(board)
+      if over?(board)
+        break
+      end
+    end
   end
     if won?(board)
       puts "Congratulations #{winner(board)}!"
