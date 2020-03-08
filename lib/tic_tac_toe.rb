@@ -112,3 +112,4 @@ def play
     puts "It's a draw"
   end
 end
+end
