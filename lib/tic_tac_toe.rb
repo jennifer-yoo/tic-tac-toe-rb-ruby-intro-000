@@ -106,8 +106,7 @@ def play
   if !full?(board)
     turn(board)
     until over?(board)
-    end
-  if won?(board)
+  elsif won?(board)
     puts "Congratulations #{winner(board)}"
   else draw?(board)
     puts "It's a draw"
