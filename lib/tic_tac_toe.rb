@@ -25,9 +25,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, current_player(board))
     display_board(board)
-  else
-    turn(board)
   end
+    turn(board)
 end
 
 def turn_count(board)
