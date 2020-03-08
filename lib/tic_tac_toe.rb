@@ -103,16 +103,15 @@ def winner(board)
 end
 
 def play(board)
-  input = gets.strip
-
   if !full?(board)
+    input = gets.strip
     until over?(board)
     turn(board)
   end
     if won?(board)
       puts "Congratulations #{winner(board)}!"
     end
-      if draw?(board) == true
+      else draw?(board) == true
         prints "Cat's Game!"
       end
   end
