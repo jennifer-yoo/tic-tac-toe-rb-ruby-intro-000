@@ -104,8 +104,8 @@ end
 
 def play(board)
   if !full?(board)
-    input = gets
     until over?(board) == true
+    input = gets
     turn(board)
   end
     if won?(board)
@@ -115,3 +115,5 @@ def play(board)
         puts "Cat's Game!"
       end
 end
+
+#  rspec spec/02_play_spec.rb
