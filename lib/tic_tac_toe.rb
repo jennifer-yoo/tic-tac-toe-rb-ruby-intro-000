@@ -107,7 +107,9 @@ def play(board)
 
   until over?(board) == true
     turn(board)
+    input += 1
   end
+
     if won?(board)
       puts "Congratulations #{winner(board)}!"
     else draw?(board) == true
