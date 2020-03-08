@@ -95,12 +95,11 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == "X"
+  if current_player(board) == "X"
     return "X"
-  end
-  if won?(board) == "O"
+  elsif current_player(board) == "O"
     return "O"
-  end
-  else draw?(board) || !full?(board)
+  else !won?(board)
     return nil
+  end
 end
