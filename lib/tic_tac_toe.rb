@@ -108,7 +108,6 @@ def play(board)
   if !full?(board)
     until over?(board)
     turn(board)
-    counter += 1
   end
     if won?(board)
       puts "Congratulations #{winner(board)}!"
