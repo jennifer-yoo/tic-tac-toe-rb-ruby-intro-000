@@ -103,8 +103,6 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
-
   until over?(board) == true
     turn(board)
     input.to_i += 1
