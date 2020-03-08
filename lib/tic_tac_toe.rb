@@ -104,8 +104,8 @@ end
 
 def play(board)
   input = gets
-  turn_count(board) = 0
   if !full?(board)
+    turn_count(board) = 0
     until over?(board)
     turn(board)
     turn_count(board) += 1
