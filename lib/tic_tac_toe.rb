@@ -31,13 +31,13 @@ def turn(board)
 end
 
 def turn_count(board)
-  turns = 0
-  board.each do |token|
-    if token == "X" || token == "O"
-      turns += 1
+  counter = 0
+  board.each do |player|
+    if player == "X" || player == "O"
+      counter += 1
     end
   end
-  turns
+  counter
 end
 
 def current_player(board)
@@ -95,8 +95,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
-  if "#{board}" = "X"
+  if won?(board) 
     return "X"
   else
     return "O"
